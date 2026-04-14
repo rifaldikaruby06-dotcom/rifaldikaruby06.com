@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Mahasiswa</title>
+    <script>
+        function tampilkan(menu) {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("profil").style.display = "none";
+
+            document.getElementById(menu).style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- Tabel utama -->
+<table border="1" width="100%" height="500">
+
+    <!-- HEADER -->
+    <tr>
+        <td colspan="2" align="center">
+            <h2>Header</h2>
+        </td>
+    </tr>
+
+    <!-- ISI -->
+    <tr>
+        <!-- SIDEBAR -->
+        <td width="20%" valign="top">
+            <b>Navigasi</b><br><br>
+            <a href="#" onclick="tampilkan('home')">Home</a><br><br>
+            <a href="#">Latihan 1</a><br><br>
+            <a href="#">Latihan 2</a><br><br>
+            <a href="#" onclick="tampilkan('profil')">Profil</a><br><br>
+        </td>
+
+        <!-- CONTENT -->
+        <td valign="top">
+
+            <!-- HOME -->
+            <div id="home">
+                <h3>Content</h3>
+                <p>Selamat datang di website saya</p>
+            </div>
+
+            <!-- PROFIL -->
+            <div id="profil" style="display:none;">
+                <h3>Profil</h3>
+                <table border="2">
+                    <tr>
+                        <td>Nama</td>
+                        <td>Nama Mahasiswa</td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td>12345678</td>
+                    </tr>
+                </table>
+            </div>
+
+        </td>
+    </tr>
+
+    <!-- FOOTER -->
+    <tr>
+        <td colspan="2" align="center">
+            Footer &copy; Nama Mahasiswa
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
